@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var findNumbers = function(nums) {
+            var numbers = 0;
+            for (var i in nums){
+                if (((nums[i]+"").length % 2) == 0){
+                    numbers++;
+                }
+            }
+            return numbers;
+        };
+
+        var a = [12,345,2,6,7896];
+        var b = findNumbers(a);
+        console.log(b);
+
+    </script>
+</body>
+</html>
